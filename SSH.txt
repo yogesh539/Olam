@@ -1,0 +1,12 @@
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC25ow2pMslm8DAmJo7rOxE+BVrH9Jo8Ba8DogSJvv0sAUsXLwB73C/d4lw2AKQtTOw6NzYfla4saftTfPBfjcfPwFHfby1E4ljLqko1H4gxsJ/me0pUG3ikEcv8q10lxRbgsZneS50bBJVJVKpihViLLdftv27Kd9CmxuCF4aRec3Fp7mbiwsfVbHnGeagdUFNdzSX5okUBYmXcAOaqNy/h7Fev+m5s8aTo68qoHkW+RJbfdMeTnbtPFTKJ+lvRczCRKndcHDKfAxROwO3pA6GvTymKJ4FWJPJ6Thaiypxn6BsAyhRxTIO8Fx7W+bDjUO8ygZeEswEVY4pADmIF8R2+HR07OUrhyaoJRBvO+hzef8Fq2GjqRH68dFumX0c5sqAoV7F+TMqyvwVq5SVNJMbTCtCSHVMeFm2CVRo6saQFDc5SPZVq9JSkLKFu7iJHt959N9yEw7ew6eGVqV+AT7cZ9dZO9ZMCVoLF7EzGo189Go6BiddAo7ohSAZvTY4nc55T/AX5OM53zZonwnDrbvC9qyK2WP3i1svieM7mVKEtV/0Tx37RfHuLsJYy++GtuhBMeXSZEzMGQy2lLK31l2OLc8tw3CCDBA5hQ1FiMwUwZsyGPslLkhcx4NOGIc7HqVr2d+8O/GHvW8BZDNhs6VPnQjbjVC7RtHLDU2w3r8HCw== yogeshkumar842372@gmail.com
+
+ ssh-keygen -t rsa -b 4096 -C "yogeshkumar842372@gmail.com"
+
+ eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+clip < ~/.ssh/id_rsa.pub
+
+github--> settings -->SSH and GPG key -> add new ssh key and paste the copied key 
+
